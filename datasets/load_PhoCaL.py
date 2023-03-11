@@ -18,7 +18,7 @@ from tools.eval_utils import load_depth, get_bbox
 from tools.dataset_utils import *
 
 
-class PoseDataset(data.Dataset):
+class PhoCaLDataset(data.Dataset):
     def __init__(self, source=None, mode='train', data_dir=None,
                  n_pts=1024, img_size=256, per_obj=''):
         '''

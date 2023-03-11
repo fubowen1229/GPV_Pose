@@ -18,7 +18,7 @@ import time
 import tensorflow as tf
 from tools.eval_utils import setup_logger, compute_sRT_errors
 torch.autograd.set_detect_anomaly(True)
-device = 'cuda'
+device = 'cuda:4'
 
 def train(argv):
     if not os.path.exists(FLAGS.model_save):
